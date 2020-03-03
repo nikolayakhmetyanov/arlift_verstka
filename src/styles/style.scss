@@ -1,0 +1,10 @@
+@import '../mixins/mixins';
+@import './../plugins/normalize';
+
+/* Global styles */
+@import 'fonts';
+@import 'global';
+
+/* Blocks */
+@import './src/blocks/loginForm/loginForm';
+@import './src/blocks/advantagesCabinet/advantagesCabinet';

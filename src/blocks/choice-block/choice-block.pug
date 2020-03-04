@@ -1,0 +1,9 @@
+mixin choice-block(src, title, text)
+  +b.choice-block
+    +e.wrap-elements
+      +e.wrap-icon
+        +e.IMG.icon(src=src)
+      +e.title=title
+      +e.text=text
+      +e.wrap-btn
+        +e.A.btn(href="#") Войти

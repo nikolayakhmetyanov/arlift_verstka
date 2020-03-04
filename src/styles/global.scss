@@ -1,3 +1,7 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
 html {
   
 }
@@ -39,11 +43,21 @@ header {
 
 /* style pages global */
 
+/* helpres */
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-150 {
+  padding-bottom: 150px;
+}
+
+/* helpers */
+
 /* стили для страницы ВХОД В КАБИНЕТ */
 
 .login-page {
-  padding-top: 50px;
-  padding-bottom: 150px;
   &__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -53,7 +67,7 @@ header {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 0 60px 0 80px;
+    padding-left: 90px;
     @media (max-width: 1140px) {
       padding: 0;
     }
@@ -74,3 +88,46 @@ header {
 }
 
 /* стили для страницы ВХОД В КАБИНЕТ */
+
+/* стили для страницы РЕГИСТРАЦИЯ */
+
+.registration-page {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media (max-width: 1140px) {
+      margin: 0;
+      padding: 0 15px;
+    }
+  }
+  &__wrap-elemets-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    padding: 0 90px;
+    @media (max-width: 1140px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__left-col {
+    width: 50%;
+    padding: 0 20px;
+    @media (max-width: 1140px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  &__right-col {
+    width: 50%;
+    padding: 0 20px;
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
+  }
+}
+
+/* стили для страницы РЕГИСТРАЦИЯ */

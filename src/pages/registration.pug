@@ -1,0 +1,12 @@
+extends ../templates/template.pug
+
+block content
+  .title-page Регистрация
+  .wrap-page-content
+    +b.registration-page.pt-80.pb-150
+      +e.container
+        +e.wrap-elemets-page
+          +e.left-col
+            +choice-block("img/users-icon.svg", "Частное лицо", "Техническая служба ARLIFT имеет все необходимые сертификаты и лицензии от производителей.")
+          +e.right-col
+            +choice-block("img/bag-icon.svg", "Юридическое лицо", "Техническая служба ARLIFT имеет все необходимые сертификаты и лицензии от производителей.")

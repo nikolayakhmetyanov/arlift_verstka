@@ -1,0 +1,11 @@
+mixin login-form
+  +b.login-form
+    +e.wrap-items
+      +e.INPUT.input(placeholder="Введите email или номер телефона")
+      +e.INPUT.input(placeholder="Пароль" type="password")
+      +e.A.forgot-password(href="#") Забыли пароль?
+      +e.wrap-login-btn
+        +e.A.login-btn(href="#") Войти
+      +e.registration
+        span Еще нет аккаунта?
+        a(href="#") Зарегистрироваться

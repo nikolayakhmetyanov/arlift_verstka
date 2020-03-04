@@ -33,7 +33,7 @@ header {
 
 /* style pages global */
 
-.wrapPageContent {
+.wrap-page-content {
   background-color: #F9F9F9;
 }
 
@@ -41,15 +41,15 @@ header {
 
 /* стили для страницы ВХОД В КАБИНЕТ */
 
-.loginPage {
+.login-page {
   padding-top: 50px;
   padding-bottom: 150px;
-  .container {
+  &__container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
   }
-  .wrapElemetsPage {
+  &__wrap-elemets-page {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -58,14 +58,14 @@ header {
       padding: 0;
     }
   }
-  .leftCol {
+  &__left-col {
     width: 50%;
     @media (max-width: 1140px) {
       width: 100%;
       margin-bottom: 40px;
     }
   }
-  .rightCol {
+  &__right-col {
     width: 50%;
     @media (max-width: 1140px) {
       width: 100%;

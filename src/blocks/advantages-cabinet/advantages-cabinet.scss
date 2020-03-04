@@ -1,33 +1,33 @@
-.advantagesCabinet {
+.advantages-cabinet {
   padding-top: 50px;
   padding-left: 65px;
   @media (max-width: 1140px) {
     padding: 35px;
   }
-  .item {
+  &__item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 50px;
   }
-  .item:last-child {
+  &__item:last-child {
     margin-bottom: 0;
   }
-  .wrapIcon {
+  &__wrap-icon {
     display: flex;
     justify-content: center;
     min-width: 55px;
     margin-right: 30px;
   }
-  .icon {
+  &__icon {
     display: block;
   }
-  .title {
+  &__title {
     margin-bottom: 10px;
     font-size: 16px;
     text-transform: uppercase;
     color: #232221;
   }
-  .text {
+  &__text {
     font-size: 14px;
     color: #999999;
     line-height: 160%;

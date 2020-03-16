@@ -163,3 +163,19 @@ header {
 }
 
 /* ТАБЫ */
+
+/* стили для страницы УСПЕХ */
+
+.succes-page {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__wrap-elemets-page {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* стили для страницы УСПЕХ */

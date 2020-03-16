@@ -497,6 +497,23 @@ header {
   display: block; }
 
 /* ТАБЫ */
+/* стили для страницы УСПЕХ */
+.succes-page__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.succes-page__wrap-elemets-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* стили для страницы УСПЕХ */
 /* Blocks */
 .login-form {
   max-width: 100%;
@@ -802,4 +819,66 @@ header {
     -o-transition: .3s;
     transition: .3s; }
   .legal-form__btn:focus {
+    outline: none; }
+
+.succes {
+  max-width: 450px; }
+  .succes__wrap-icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 30px;
+    height: 65px; }
+  .succes__icon {
+    display: block; }
+  .succes__title {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center; }
+  .succes__text {
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 164%;
+    text-align: center;
+    color: #999999; }
+  .succes__wrap-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .succes__btn {
+    display: inline-block;
+    padding: 1.2em 4em 1.15em 4em;
+    font-size: 12px;
+    color: #cc0514;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #cc0514;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer; }
+  .succes__btn:hover {
+    color: #ffffff;
+    background-color: #cc0514;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .succes__btn:focus {
     outline: none; }

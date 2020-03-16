@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css?version=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Стартовый шаблон для верстки</title>
+  </head>
+  <body>
+    <header>я хедер</header>
+    <main>
+      <div class="title-page">Регистрация</div>
+      <div class="wrap-page-content">
+        <div class="registration-legal-page pt-80 pb-150">
+          <div class="registration-legal-page__container">
+            <div class="registration-legal-page__wrap-elemets-page">
+              <div class="legal-form">
+                <div class="legal-form__wrap-elements">
+                  <div class="legal-form__wrap-icon"><img class="legal-form__icon" src="img/users-icon.svg" alt="" role="presentation"/>
+                  </div>
+                  <div class="legal-form__title">Юридическое лицо
+                  </div>
+                  <div class="legal-form__text">После регистрации вы сможете настроить свой личный кабинет у получить персональные скидки
+                  </div>
+                  <div class="legal-form__tabs" data-tab="root">
+                    <div class="legal-form__wrap-nav">
+                      <button class="legal-form__nav-item active" data-tab-nav="1">Вы уже с нами работали
+                      </button>
+                      <button class="legal-form__nav-item" data-tab-nav="2">Еще не работали
+                      </button>
+                    </div>
+                    <div class="legal-form__wrap-content">
+                      <div class="legal-form__content active" data-tab-content="1"><input class="legal-form__input" placeholder="Введите ИНН" type="text"/>
+                      </div>
+                      <div class="legal-form__content" data-tab-content="2"><input class="legal-form__input" placeholder="Название компании" type="text"/><input class="legal-form__input" placeholder="ИНН" type="text"/><input class="legal-form__input" placeholder="Город" type="text"/><textarea class="legal-form__input legal-form__input--textarea" placeholder="Юр.адрес компании"></textarea><input class="legal-form__input" placeholder="Сфера деятельности" type="text"/><input class="legal-form__input" placeholder="Контактное лицо ФИО" type="text"/><input class="legal-form__input" type="tel" placeholder="Номер телефона"/><input class="legal-form__input" type="email" placeholder="Почта*" required="required"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="legal-form__wrap-btn">
+                    <button class="legal-form__btn" href="#">Зарегистрироваться
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Я футер</footer>
+    <script src="js/scripts.js?version=1"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+mixin legal-form
+  +b.legal-form
+    +e.wrap-elements
+      +e.wrap-icon
+        +e.IMG.icon(src="img/users-icon.svg")
+      +e.title Юридическое лицо
+      +e.text После регистрации вы сможете настроить свой личный кабинет у получить персональные скидки
+      +e.tabs(data-tab="root")
+        +e.wrap-nav
+          +e.BUTTON.nav-item.active(data-tab-nav="1") Вы уже с нами работали
+          +e.BUTTON.nav-item(data-tab-nav="2") Еще не работали
+        +e.wrap-content
+          +e.content.active(data-tab-content="1")
+            +e.INPUT.input(placeholder="Введите ИНН")
+          +e.content(data-tab-content="2")
+            +e.INPUT.input(placeholder="Название компании")
+            +e.INPUT.input(placeholder="ИНН")
+            +e.INPUT.input(placeholder="Город")
+            +e.TEXTAREA.input.--textarea(placeholder="Юр.адрес компании")
+            +e.INPUT.input(placeholder="Сфера деятельности")
+            +e.INPUT.input(placeholder="Контактное лицо ФИО")
+            +e.INPUT.input(type="tel" placeholder="Номер телефона")
+            +e.INPUT.input(type="email" placeholder="Почта*"
+      +e.wrap-btn
+        +e.BUTTON.btn(href="#") Зарегистрироваться

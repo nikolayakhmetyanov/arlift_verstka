@@ -2,7 +2,6 @@
 /.git/
 /**/Thumbs.db
 /**/*.DS_Store
-build
 node_modules
 .zip
 yarn.lock

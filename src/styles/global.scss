@@ -131,3 +131,35 @@ header {
 }
 
 /* стили для страницы РЕГИСТРАЦИЯ */
+
+/* стили для страницы РЕГИСТРАЦИЯ ЮР ФОРМА*/
+
+.registration-legal-page {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__wrap-elemets-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+/* стили для страницы РЕГИСТРАЦИЯ ЮР ФОРМА*/
+
+/* ТАБЫ */
+.active[data-tab-nav] {
+  display: block;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+/* ТАБЫ */

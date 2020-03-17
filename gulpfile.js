@@ -54,6 +54,7 @@ gulp.task('templates', function () {
   return gulp.src(paths.html.src)
     .pipe(plumber())
     .pipe(pug({
+      basedir: './src/',
       /*locals : {
         nav: JSON.parse($.fs.readFileSync('./src/assets/navigation.json', 'utf8'))
       },*/

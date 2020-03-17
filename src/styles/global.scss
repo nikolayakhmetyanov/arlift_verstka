@@ -44,6 +44,9 @@ header {
 /* style pages global */
 
 /* helpres */
+.pt-30 {
+  padding-top: 30px;
+}
 
 .pt-80 {
   padding-top: 80px;
@@ -179,3 +182,28 @@ header {
 }
 
 /* стили для страницы УСПЕХ */
+
+/* стили для страницы ПРОФИЛЬ */
+
+.profile-page {
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__wrap-elemets-page {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &__left-col {
+    flex-basis: 230px;
+    margin-right: 40px;
+  }
+  &__right-col {
+    flex-grow: 1;
+  }
+}
+
+/* стили для страницы ПРОФИЛЬ */

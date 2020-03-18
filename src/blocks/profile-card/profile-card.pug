@@ -1,0 +1,20 @@
+mixin profile-card
+  +b.profile-card
+    +e.title Персональный менеджер
+    +e.wrap-photo
+      +e.IMG.photo(src="img/photo-manager.jpg")
+    +e.name Иван Голубев
+    +e.phone
+      +e.wrap-icon
+        include /assets/img/phone-icon.svg
+      span +7 (931) 228-31-90
+    +e.skype
+      +e.wrap-icon
+        include /assets/img/skype-icon.svg
+      span ivan.golubev
+    +e.work-time
+      +e.wrap-icon
+        include /assets/img/clock-small-icon.svg
+      span Время работы:<br>пн-пт 9.00-19.00
+    +e.wrap-btn
+      +e.BUTTON.btn(href="#") Написать

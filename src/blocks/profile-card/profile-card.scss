@@ -1,0 +1,90 @@
+.profile-card {
+  padding: 30px 30px 40px 30px;
+  background-color: #fff;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  &__title {
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333
+  }
+  &__wrap-photo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__photo {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  &__name {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: #333333;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    span {
+      font-size: 14px;
+      color: #777777;
+    }
+  }
+  &__skype {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    span {
+      font-size: 14px;
+      color: #777777;
+    }
+  }
+  &__work-time {
+    display: flex;
+    span {
+      font-size: 14px;
+      color: #777777;
+    }
+  }
+  &__wrap-icon {
+    margin-right: 18px;
+  }
+  svg {
+    display: inline-block;
+  }
+  &__wrap-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+  }
+  &__btn {
+    display: inline-block;
+    padding: 1.2em 4em 1.15em 4em;
+    font-size: 12px;
+    color: #cc0514;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #cc0514;
+    background-color: transparent;
+    transition: .3s;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    color: #ffffff;
+    background-color: #cc0514;
+    transition: .3s;
+  }
+  &__btn:focus {
+    outline: none;
+  }
+}

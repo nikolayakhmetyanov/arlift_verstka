@@ -1,0 +1,52 @@
+mixin table
+  +b.table.mb-30
+    table
+      thead
+        tr
+          th Номер
+          th Оборудование
+          th Даты<br>аренды
+          th До конца<br>аренды
+          th Тип доставки
+          th.text-center Оплата
+          th.text-center Документы
+          th.text-right Сумма
+          th
+      tbody
+        tr
+          td 394682
+          td Jekko SPX527CDH
+          td 19.12.19<br>21.01.20
+          td 3д 2ч
+          td Доставка
+          td.text-center <div class="ellipse ellipse--100"></div>
+          td.text-center <div class="ellipse ellipse--50"></div>
+          td.text-right 34 000 руб.
+          td.text-right
+            +e.link-arrow(href="#")
+              include /assets/img/arrow-right-icon.svg
+        tr
+          td 394682
+          td Jekko SPX527CDH
+          td 19.12.19<br>21.01.20
+          td 3д 2ч
+          td Доставка
+          td.text-center <div class="ellipse ellipse--75"></div>
+          td.text-center <div class="ellipse ellipse--100"></div>
+          td.text-right 34 000 руб.
+          td.text-right
+            +e.link-arrow(href="#")
+              include /assets/img/arrow-right-icon.svg
+        tr
+          td 394682
+          td Jekko SPX527CDH
+          td 19.12.19<br>21.01.20
+          td 3д 2ч
+          td Доставка
+          td.text-center <div class="ellipse ellipse--50"></div> 
+          td.text-center <div class="ellipse ellipse--100"></div>
+          td.text-right 34 000 руб.
+          td.text-right
+            +e.link-arrow(href="#")
+              include /assets/img/arrow-right-icon.svg
+

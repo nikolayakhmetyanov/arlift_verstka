@@ -65,26 +65,4 @@
     justify-content: center;
     padding-top: 35px;
   }
-  &__btn {
-    display: inline-block;
-    padding: 1.2em 4em 1.15em 4em;
-    font-size: 12px;
-    color: #cc0514;
-    font-weight: bold;
-    line-height: 1;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid #cc0514;
-    background-color: transparent;
-    transition: .3s;
-    cursor: pointer;
-  }
-  &__btn:hover {
-    color: #ffffff;
-    background-color: #cc0514;
-    transition: .3s;
-  }
-  &__btn:focus {
-    outline: none;
-  }
 }

@@ -1,0 +1,6 @@
+mixin small-info-card(title, big, small, modBig, modSmall)
+  +b.small-info-card
+    +e.title=title
+    +e.wrap-content
+      +e.SPAN.big-text(class=modBig)=big
+      +e.SPAN.small-text(class=modSmall)=small

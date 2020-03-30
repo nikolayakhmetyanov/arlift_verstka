@@ -10,5 +10,32 @@ block content
             +menu
             +profile-card
           +e.right-col
-            |sdfsdfsdfsdfsdf
+            .wrap-small-info-card.mb-40
+              +small-info-card('Остаток на счету', '-12 578', 'руб.', 'small-info-card__big-text--accent', 'small-info-card__small-text--accent')
+              +small-info-card('Ваша скидка на 10.12.2019', '10%')
+              +small-info-card('Всего арендодней за 2019', '263', 'дня')
+            +tech-service
+            .default-title-block.mb-25 Последние  заказы
+            +table
+            .text-center.mb-60
+              button.custom-btn(href="#") Все заказы
+            .default-title-block.mb-25 Персональные предложения, аренда
+            .wrap-product-card.mb-40
+              +product-card
+              +product-card
+              +product-card
+            .text-center.mb-60
+              button.custom-btn(href="#") Все предложения
+            .default-title-block.mb-15 Используйте Накопленные баллы
+            .annotation.mb-30 Вы можете использовать накопленные баллы для аренды оборудования. Выберите необходимую технику и свяжитесь с менеджером для использования подарочных дней.
+            .wrap-category-card.mb-60
+              +category-card
+              +category-card
+            .default-title-block.mb-25 Скидки месяца
+            .wrap-product-card.mb-40
+              +product-card
+              +product-card
+              +product-card
+            .text-center
+              button.custom-btn(href="#") Все заказы
             

@@ -1,0 +1,27 @@
+.tech-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+  &__icon-wrap {
+    margin-right: 15px;
+  }
+  &__wrap-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__wrap-content div {
+    margin-right: 30px;
+  }
+  &__wrap-content div:last-child {
+    margin-right: 0;
+  }
+  
+}

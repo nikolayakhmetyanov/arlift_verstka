@@ -1,0 +1,17 @@
+extends ../templates/template.pug
+
+block content
+  .title-page Мои заказы
+  .wrap-page-content
+    +b.profile-page.pt-30
+      +e.container
+        +e.wrap-elemets-page
+          +e.left-col
+            +menu
+            +profile-card
+          +e.right-col
+            .default-title-block.mb-25 Проверить статус заказа
+            +search
+            .default-title-block.mb-40 Все заказы
+            +filter-sort
+            +table

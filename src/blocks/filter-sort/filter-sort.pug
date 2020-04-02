@@ -1,0 +1,22 @@
+mixin filter-sort
+  +b.filter-sort.mb-30
+    +e.filter
+      +e.I.icon-filter
+        include /assets/img/filter-icon.svg
+      span Фильтр
+    +e.wrap-sort-search
+      +e.sort
+        +e.LABEL.sort-label Сортировать по:
+        +e.SELECT.select
+          option(value='') --Please choose an option--
+          option(value='dog') Dog
+          option(value='cat') Cat
+          option(value='hamster') Hamster
+          option(value='parrot') Parrot
+          option(value='spider') Spider
+          option(value='goldfish') Goldfish
+      +e.FORM.search
+        +e.INPUT.input(placeholder="Введите номеру заказа или название оборудования")
+        +e.BUTTON.btn
+          +e.I.icon-search
+            include /assets/img/search-icon.svg

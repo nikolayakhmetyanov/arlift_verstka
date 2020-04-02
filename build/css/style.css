@@ -1463,7 +1463,9 @@ header {
           justify-content: center;
   width: calc(100% / 2 - 30px);
   padding: 25px 25px 35px 25px;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1); }
   .category-card__date-wrap {
     position: absolute;
     top: 20px;
@@ -1497,3 +1499,131 @@ header {
     text-align: center;
     font-weight: 600;
     text-transform: uppercase; }
+
+.filter-sort {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .filter-sort__filter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 50px;
+    line-height: 1; }
+  .filter-sort__icon-filter {
+    margin-right: 10px; }
+  .filter-sort__wrap-sort-search {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+  .filter-sort__sort {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .filter-sort__sort-label {
+    margin-right: 20px; }
+  .filter-sort__select {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #999999;
+    border: none;
+    border-bottom: 1px solid #999999;
+    background-color: transparent;
+    -webkit-transition: border-color .3s ease;
+    -o-transition: border-color .3s ease;
+    transition: border-color .3s ease; }
+  .filter-sort__search {
+    position: relative;
+    width: 430px; }
+  .filter-sort__input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #999999;
+    border: none;
+    border-bottom: 1px solid #afafaf;
+    background-color: transparent;
+    -webkit-transition: border-color .3s ease;
+    -o-transition: border-color .3s ease;
+    transition: border-color .3s ease; }
+  .filter-sort__btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    overflow: visible; }
+  .filter-sort input:focus, .filter-sort select:focus {
+    outline: none;
+    border-color: #cc0514;
+    -webkit-transition: border-color .3s ease;
+    -o-transition: border-color .3s ease;
+    transition: border-color .3s ease; }
+  .filter-sort input::-webkit-input-placeholder, .filter-sort select::-webkit-input-placeholder {
+    color: #999999; }
+  .filter-sort input::-moz-placeholder, .filter-sort select::-moz-placeholder {
+    color: #999999; }
+  .filter-sort input:-ms-input-placeholder, .filter-sort select:-ms-input-placeholder {
+    color: #999999; }
+
+.search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1); }
+  .search__input {
+    display: block;
+    width: 100%;
+    margin-right: 30px;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #afafaf;
+    -webkit-transition: border-color .3s ease;
+    -o-transition: border-color .3s ease;
+    transition: border-color .3s ease; }
+  .search__input:last-of-type {
+    margin-bottom: 0; }
+  .search__input:focus {
+    outline: none;
+    border-color: #cc0514;
+    -webkit-transition: border-color .3s ease;
+    -o-transition: border-color .3s ease;
+    transition: border-color .3s ease; }
+  .search__input::-webkit-input-placeholder {
+    color: #999999; }
+  .search__input::-moz-placeholder {
+    color: #999999; }
+  .search__input:-ms-input-placeholder {
+    color: #999999; }
+  .search__input--textarea {
+    max-width: 100%; }
+  .search__btn {
+    white-space: nowrap; }

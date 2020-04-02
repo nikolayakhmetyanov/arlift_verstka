@@ -1,0 +1,77 @@
+.filter-sort {
+  display: flex;
+  &__filter {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    line-height: 1;
+  }
+  &__icon-filter {
+    margin-right: 10px;
+  }
+  &__wrap-sort-search {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__sort {
+    display: flex;
+    align-items: center;
+  }
+  &__sort-label {
+    margin-right: 20px;
+  }
+  &__select {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #999999;
+    border: none;
+    border-bottom: 1px solid #999999;
+    background-color: transparent;
+    transition: border-color .3s ease;
+  }
+  &__search {
+    position: relative;
+    width: 430px;
+  }
+  &__input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #999999;
+    border: none;
+    border-bottom: 1px solid #afafaf;
+    background-color: transparent;
+    transition: border-color .3s ease;
+  }
+  &__btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    overflow: visible;
+  }
+  input:focus, select:focus {
+    outline: none;
+    border-color: #cc0514;
+    transition: border-color .3s ease;
+  }
+  input::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: #999999;
+  }
+
+  input::-moz-placeholder, select::-moz-placeholder {
+    color: #999999;
+  }
+
+  input:-ms-input-placeholder, select:-ms-input-placeholder {
+    color: #999999;
+  }
+}

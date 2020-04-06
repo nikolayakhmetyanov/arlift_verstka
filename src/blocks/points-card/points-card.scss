@@ -1,0 +1,33 @@
+.points-card {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  &__wrap-items {
+    display: flex;
+  }
+  &__points-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 65px;
+  }
+  &__wrap-icon {
+    margin-right: 15px;
+  }
+  &__point {
+    position: relative;
+    top: 6px;
+    white-space: nowrap;
+    font-size: 61px;
+    line-height: 1;
+    font-weight: 300;
+    color: #CC0514;
+  }
+  &__point span {
+    font-size: 28px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 23px;
+    color: #777777;
+  }
+}

@@ -1,9 +1,13 @@
 .small-info-card {
   display: flex;
   flex-direction: column;
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 12 * 4 - 30px);
+  margin: 0 15px 30px 15px;
   padding: 30px;
   background-color: #F2E3E6;
+  &--col-6 {
+    width: calc(100% / 12 * 6 - 30px);
+  }
   &__title {
     margin-bottom: 25px;
     font-size: 16px;
@@ -16,6 +20,9 @@
   &__wrap-content--accent {
     color: #CC0514;
   }
+  &__wrap-content--flex {
+    display: flex;
+  }
   &__big-text {
     display: inline-block;
     margin-right: 10px;
@@ -27,11 +34,36 @@
     color: #CC0514;
     font-size: 44px;
   }
+  &__big-text--fz-45 {
+    font-size: 45px;
+  }
   &__small-text {
     font-weight: 300;
     font-size: 28px;
   }
   &__small-text--accent {
     color: #CC0514;
+  }
+  &__right-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #999999;
+  }
+  &__right-text span:first-child {
+    margin-bottom: 5px;
+  }
+  &__info-wrap {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__text-wrap {
+    width: 40%;
+    margin-left: 25px;
+    font-size: 14px;
   }
 }

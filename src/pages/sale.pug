@@ -1,0 +1,46 @@
+extends ../templates/template.pug
+
+block content
+  .title-page Регистрация
+  .wrap-page-content
+    +b.profile-page.pt-30
+      +e.container
+        +e.wrap-elemets-page
+          +e.left-col
+            +menu
+            +profile-card
+          +e.right-col
+            .default-title-block.mb-25 Статистика
+            .wrap-small-info-card.mb-40
+              +small-info-card('Ваша текущая скидка', '10%')
+              +b.small-info-card
+                +e.title Будущая скидка
+                +e.wrap-content.--flex
+                  +e.SPAN.big-text 10%
+                  +e.SPAN.right-text
+                    span еще 17
+                    span арендодней
+              +small-info-card('Всего арендодней за 2019', '263', 'дня')
+              +b.small-info-card.--col-6
+                +e.wrap-content.--flex
+                  +e.info-wrap
+                    +e.SPAN.big-text.--fz-45 34 000
+                    +e.SPAN.small-text руб.
+                  +e.text-wrap Ниже арендная ставка по сравнению с прайсом 
+              +b.small-info-card.--col-6
+                +e.wrap-content.--flex
+                  +e.info-wrap
+                    +e.SPAN.big-text.--fz-45 34 000
+                    +e.SPAN.small-text руб.
+                  +e.text-wrap Cэкономлено благодаря программе лояльности 
+            .default-title-block.mb-25 Накопленные баллы
+            +points-card
+            .wrap-category-card.mb-60
+              +category-card
+              +category-card
+            .default-title-block.mb-25 Персональные предложения, аренда
+            .wrap-product-card.mb-40
+              +product-card
+              +product-card
+              +product-card
+            

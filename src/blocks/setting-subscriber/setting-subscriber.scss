@@ -1,0 +1,67 @@
+.setting-subscriber {
+  padding: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  &__title {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #999999;
+  }
+  &__select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999999;
+    border: none;
+    border-bottom: 1px solid #999999;
+    background-color: transparent;
+    transition: border-color .3s ease;
+  }
+  &__label {
+    font-size: 13px;
+    color: #999999;
+  }
+  &__wrap-checkboxs {
+    display: flex;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__item-checkbox {
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+    font-size: 14px;
+  }
+  
+  &__checkbox {
+    display: none;
+  }
+  &__checkbox:checked + .setting-subscriber__check {
+    border-color: #CC0514;
+  }
+  &__checkbox:checked + .setting-subscriber__check:after {
+    display: block;
+  }
+  &__check {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #AFAFAF;
+  }
+  &__check:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    display: none;
+    background-color: #CC0514;
+  }
+  &__item-checkbox {
+    line-height: 1;
+  }
+}

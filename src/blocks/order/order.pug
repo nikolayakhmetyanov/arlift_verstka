@@ -1,0 +1,32 @@
+mixin order
+  +b.order.mb-40
+    +e.title-img-wrap
+      +e.img(src="img/demo-category.jpg", alt="")
+      +e.title Какиой-то мини кран №23123
+    +e.info
+      +e.header
+        +e.wrap-item
+          +e.key Заказ
+          +e.value 3456782 от 17.12.19
+        +e.wrap-item
+          +e.key Комплектация
+          +e.value Мини-кран SPB209CP
+      +e.main
+        +e.main-left
+          +e.wrap-item
+            +e.key Сумма заказа
+            +e.value 34 000 руб.
+          +e.wrap-item
+            +e.key Оплачено
+            +e.value 14 000 руб.
+          +e.wrap-item
+            +e.key К оплате
+            +e.value 20 000 руб.
+        +e.main-right
+          +e.A.btn.custom-btn(href="#") Оплатить заказ
+      +e.footer
+        +e.footer-left-col Документы
+        +e.footer-center-col
+          +e.A.link(href="#") Скачать документы
+        +e.footer-right-col
+          +e.A.link(href="#") Запросить акт сверки

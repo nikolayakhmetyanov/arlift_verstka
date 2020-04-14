@@ -1,0 +1,21 @@
+extends ../templates/template.pug
+
+block content
+  .title-page Регистрация
+  .wrap-page-content
+    +b.profile-page.pt-30
+      +e.container
+        +e.wrap-elemets-page
+          +e.left-col
+            +menu
+            +profile-card
+          +e.right-col
+            .default-title-block.mb-25 Информация о компании
+            +info-company
+            .default-title-block.mb-25 Настройка рассылок
+            +setting-subscriber
+            .default-title-block.mb-25 Сброс пароля
+            +reset-password
+            +b.wrap-btn-center
+              +e.BUTTON.btn.custom-btn.--no-accent(href="#") Отмена
+              +e.BUTTON.btn.custom-btn.--accent(href="#") Cохранить

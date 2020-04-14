@@ -1,0 +1,85 @@
+.info-company {
+  max-width: 100%;
+  padding: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  &__wrap-elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  &__wrap-input {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+  &__wrap-input--w50 {
+    width: calc(100% / 12 * 6 - 30px);
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px dashed #afafaf;
+    transition: border-color .3s ease;
+  }
+  &__input:last-of-type {
+    margin-bottom: 0;
+  }
+  &__input:focus {
+    outline: none;
+    border-bottom: 1px dashed #CC0514;
+    transition: border-color .3s ease;
+  }
+  &__input::-webkit-input-placeholder {
+    color: #999999;
+  }
+  &__input::-moz-placeholder {
+    color: #999999;
+  }
+  &__input:-ms-input-placeholder {
+    color: #999999;
+  }
+  &__input--textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+  &__label {
+    font-size: 13px;
+    color: #999999;
+  }
+  &__select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999999;
+    border: none;
+    border-bottom: 1px dashed #999999;
+    background-color: transparent;
+    transition: border-color .3s ease;
+  }
+  &__error-block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 15px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #ECECEC;
+  }
+  &__wrap-icon {
+    margin-right: 10px;
+  }
+  &__error-block span {
+    margin-right: 15px;
+  }
+  &__error-block a {
+    color: #CC0514;
+    text-decoration: none;
+  }
+}

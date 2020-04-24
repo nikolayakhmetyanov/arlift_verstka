@@ -1,0 +1,30 @@
+.tech-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  &__item {
+    width: calc(100% / 12 * 4);
+    margin: 0 -15px;
+    padding: 0 15px;
+    text-align: center;
+  }
+  &__icon-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  &__small-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #777777
+  }
+  &__big-title {
+    font-size: 24px;
+  }
+}

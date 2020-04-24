@@ -1,0 +1,21 @@
+extends ../templates/template.pug
+
+block content
+  .title-page Регистрация
+  .wrap-page-content
+    +b.profile-page.pt-30
+      +e.container
+        +e.wrap-elemets-page
+          +e.left-col
+            +menu
+            +profile-card
+          +e.right-col
+            +b.UL.breadcrumbs
+              +e.LI.item
+                include /assets/img/arrow-left.svg
+                +e.A.link(href="#") Все заказы
+            +tech-block
+            .default-title-block.mb-25 Подать заявку на сервисное обслуживание
+            +tech-form
+            .default-title-block.mb-25 Все услуги
+            +all-services

@@ -1,0 +1,37 @@
+mixin tech-form
+  +b.tech-form.mb-60
+    +e.wrap-elements
+      +e.wrap-input
+        +e.LABEL.label Номер договора поставки/оказания услуг
+        +e.INPUT.input(value="")
+      +e.wrap-input.--w50
+        +e.LABEL.label Тип машины / оборудования
+        +e.SELECT.select
+          option(value='') --Please choose an option--
+          option(value='dog') Dog
+          option(value='cat') Cat
+          option(value='hamster') Hamster
+          option(value='parrot') Parrot
+          option(value='spider') Spider
+          option(value='goldfish') Goldfish
+      +e.wrap-input.--w50
+        +e.LABEL.label Заводской номер машины
+        +e.INPUT.input(value="")
+      +e.wrap-input.--w50
+        +e.LABEL.label Номер договора поставки/оказания услуг
+        +e.INPUT.input(value="")
+      +e.wrap-input.--w50
+        +e.LABEL.label Причина поломки
+        +e.SELECT.select
+          option(value='') --Please choose an option--
+          option(value='dog') Dog
+          option(value='cat') Cat
+          option(value='hamster') Hamster
+          option(value='parrot') Parrot
+          option(value='spider') Spider
+          option(value='goldfish') Goldfish
+      +e.wrap-input
+        +e.LABEL.label Причина поломки
+        +e.TEXTAREA.input.--textarea(value="192289, Россия, Санкт-Петербург, пр. 9-го Января, д. 18, литер А")
+      +e.wrap-btn
+        +e.BUTTON.btn(href="#") Зарегистрироваться

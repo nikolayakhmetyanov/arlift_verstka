@@ -16,6 +16,17 @@
   &__wrap-content {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1140px) {
+      width: 100%;
+      padding: 20px 0;
+    }
+    div {
+      @media (max-width: 1140px) {
+        width: 100%;
+        margin-right: 0 !important;
+        padding: 15px 0;
+      }
+    }
   }
   &__wrap-content div {
     margin-right: 30px;
@@ -23,5 +34,9 @@
   &__wrap-content div:last-child {
     margin-right: 0;
   }
-  
+  &__btn {
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
+  }
 }

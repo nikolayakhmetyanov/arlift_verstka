@@ -35,15 +35,22 @@ header {
 }
 
 .default-title-block {
+  padding: 0 15px;
   font-size: 18px;
   text-transform: uppercase;
-  color: #3A3A3A
+  color: #3A3A3A;
+  @media (max-width: 1140px) {
+    text-align: center;
+  }
 }
 
 .annotation {
   font-size: 14px;
   line-height: 1.6;
   color: #777777;
+  @media (max-width: 1140px) {
+    padding: 0 15px;
+  }
 }
 
 .custom-btn {
@@ -81,7 +88,31 @@ header {
 /* style pages global */
 
 .wrap-page-content {
+  position: relative;
   background-color: #F9F9F9;
+}
+
+.trigger-left-menu {
+  display: none;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #F9F9F9;
+  @media (max-width: 1140px) {
+    display: block;
+  }
+}
+
+[class *= "__left-col"] {
+  @media (max-width: 1140px) {
+    display: none;
+  }
+}
+
+
+[class *= "__left-col"].active {
+  @media (max-width: 1140px) {
+    display: block;
+  }
 }
 
 /* style pages global */
@@ -273,6 +304,9 @@ header {
   }
   &__right-col {
     flex-grow: 1;
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
   }
 }
 
@@ -286,6 +320,9 @@ header {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  @media (max-width: 1140px) {
+    margin: 0;
+  }
 }
 
 /* обертка для карточек информации */
@@ -298,6 +335,9 @@ header {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  @media (max-width: 1140px) {
+    margin: 0;
+  }
 }
 
 /* обертка для карточек товара */
@@ -309,6 +349,9 @@ header {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  @media (max-width: 1140px) {
+    margin: 0;
+  }
 }
 
 /* обертка для карточек категорий */
@@ -319,6 +362,9 @@ header {
   margin: 0 0 30px 0;
   padding: 0;
   list-style-type: none;
+  @media (max-width: 1140px) {
+    padding: 0 15px;
+  }
   &__item {
     display: flex;
     align-items: center;
@@ -342,7 +388,14 @@ header {
 .wrap-btn-center {
   display: flex;
   justify-content: center;
+  @media (max-width: 1140px) {
+    flex-wrap: wrap;
+  }
   &__btn {
     margin-right: 30px;
+    @media (max-width: 1140px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 }

@@ -3,6 +3,9 @@
   padding: 30px;
   background-color: #fff;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  @media (max-width: 1140px) {
+    flex-wrap: wrap;
+  }
   &__input {
     display: block;
     width: 100%;
@@ -12,9 +15,16 @@
     border: none;
     border-bottom: 1px solid #afafaf;
     transition: border-color .3s ease;
+    @media (max-width: 1140px) {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
   }
   &__input:last-of-type {
     margin-bottom: 0;
+    @media (max-width: 1140px) {
+      margin-bottom: 25px;
+    }
   }
   &__input:focus {
     outline: none;
@@ -35,5 +45,8 @@
   }
   &__btn {
     white-space: nowrap;
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
   }
 }

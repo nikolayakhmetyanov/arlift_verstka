@@ -17,6 +17,9 @@
   }
   &__wrap-input--w50 {
     width: calc(100% / 12 * 6 - 30px);
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
   }
   &__input {
     display: block;

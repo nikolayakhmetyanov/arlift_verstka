@@ -27,12 +27,20 @@
     &:last-child {
       margin-right: 0;
     }
+    @media (max-width: 1140px) {
+      flex-wrap: wrap;
+    }
   }
   &__item-checkbox {
     display: flex;
     align-items: center;
     margin-right: 90px;
     font-size: 14px;
+    @media (max-width: 1140px) {
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
   }
   
   &__checkbox {

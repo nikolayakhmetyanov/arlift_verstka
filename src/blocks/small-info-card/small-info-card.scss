@@ -5,8 +5,14 @@
   margin: 0 15px 30px 15px;
   padding: 30px;
   background-color: #F2E3E6;
+  @media (max-width: 1140px) {
+    width: 100%;
+  }
   &--col-6 {
     width: calc(100% / 12 * 6 - 30px);
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
   }
   &__title {
     margin-bottom: 25px;
@@ -22,6 +28,9 @@
   }
   &__wrap-content--flex {
     display: flex;
+    @media (max-width: 1140px) {
+      flex-wrap: wrap;
+    }
   }
   &__big-text {
     display: inline-block;
@@ -64,6 +73,7 @@
   }
   &__text {
     font-size: 24px;
+    
   }
   &__small-text--accent {
     color: #CC0514;
@@ -89,5 +99,10 @@
     width: 40%;
     margin-left: 25px;
     font-size: 14px;
+    @media (max-width: 1140px) {
+      width: 100%;
+      margin: 0;
+      padding-top: 25px;
+    }
   }
 }

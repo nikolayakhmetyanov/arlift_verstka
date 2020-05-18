@@ -38,4 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 	/* Tabs */
 
+	const triggerLeftMenu = document.querySelector('.trigger-left-menu'),
+				leftMenu = document.querySelector('[class *= "__left-col"]'),
+				wrapElemntsPage = document.querySelector('.wrap-page-content');
+
+	triggerLeftMenu.addEventListener('click', () => {
+		leftMenu.classList.toggle('active');
+		wrapElemntsPage.style.overflow = "hidden";
+	})
+
 })

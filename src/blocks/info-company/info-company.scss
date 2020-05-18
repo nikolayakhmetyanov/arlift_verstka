@@ -17,6 +17,9 @@
   }
   &__wrap-input--w50 {
     width: calc(100% / 12 * 6 - 30px);
+    @media (max-width: 1140px) {
+      width: 100%;
+    }
   }
   &__input {
     display: block;
@@ -71,15 +74,28 @@
     padding: 20px;
     font-size: 14px;
     background-color: #ECECEC;
+    @media (max-width: 1140px) {
+      flex-wrap: wrap;
+    }
   }
   &__wrap-icon {
     margin-right: 10px;
+
   }
   &__error-block span {
     margin-right: 15px;
+    @media (max-width: 1140px) {
+      width: 80%;
+      margin-right: 0;
+    }
   }
   &__error-block a {
     color: #CC0514;
     text-decoration: none;
+    @media (max-width: 1140px) {
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+    }
   }
 }
